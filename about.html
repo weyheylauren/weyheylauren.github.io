@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lauren's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main">
+        </div>
+        <hr class = line1>
+        <div class="main2">
+            <div class = "logo">
+                <img src="logo.png">
+            </div>
+            <div class="button">
+                <a href="https://github.com/weyheylauren" target=”_blank” class="btn">Github</a>
+                <a href="https://www.linkedin.com/in/lauren-tharpe-b741b61b0/" target=”_blank” class="btn">Linkedin</a>
+            </div>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <hr class = line1>
+        <div class = "mainpage">
+            <div class = "aboutme">
+                <div class="section1">
+                    Visionary ○ Software Engineer ○ Designer
+                </div>
+                <div class="section2">
+                    <h2>My Background</h2>
+                    <p>Hello and welcome to my own personal portfolio website. My name is Lauren Tharpe, a student who is currently studying at the University of Winnipeg.
+                    My dream is not only to dive into the computer science field as a whole, but to create meaningful computer science related content for the world to enjoy whether
+                    it be a personal passion project or a company-run change in the technology we use today.<span id = "dots1">..</span><span id="invisible-text1"> Currently, I am working towards a bachelors
+                    degree in Applied Computer Science. Thus far I have gained experience in Python, Java, HTML, CSS, and Blender. I'd like to say I'm quick to pick up new topics as a lot of 
+                    my skills, including the ones I used to build this website, are self-taught. I've worked on projects that range in all sorts of required skills, like a discord chatbot taught with an AI,
+                    multiple Java and Python based games, as well as a few webscrapers.</span></p><br>
+                    <button id="btn1" onclick="MoreLess1()">Read More</button>
+                </div>
+                <div class ="section3">
+                    <h2>More About Me </h2>
+                    If you want to get to know me on a more personal level, this section is for you. On my downtime I enjoy playing video games, watching TV, reading, going out with friends, and bettering my computer science
+                    skills, of course. My favorite show right now is Stranger things, my favorite video game is Dead By Daylight, and my personal favorite out of the projects I've done is my discord chatbot.
+                    <span id = "dots2">..</span><span id="invisible-text2"> On a typical Friday night you'll either find me in my room talking to friends over Discord or going to a gaming cafe with friends! I am 
+                    the type of person who isn't afraid to tell you my opinion and analysis on a situation. There's nothing that can stop me once I gain a passion for a certain project or 
+                    subject and will work nonstop to finish it out of pure excitement. I'm very achievement-oriented and love to use my imagination to either design a front-end element or 
+                    conjure a solution to a backend problem.</span> <br>
+                    <button id="btn2" onclick="MoreLess2()">Read More</button>
+                </div>
+            </div>
+            <div class = "mainpic2">
+                <img src="bgbg.jpg">
+            </div>
+            <div class="myright2">
+                <p>Learn More About Me</p>
+            </div>
+        </div>
+    </header>
+<script>
+    function MoreLess1(){
+        var dots=document.getElementById("dots1");
+        var invisibleText=document.getElementById("invisible-text1");
+        var btnText=document.getElementById("btn1");
+        if(dots.style.display!="none"){
+            dots.style.display="none";
+            invisibleText.style.display="inline";
+            btnText.innerHTML="Read Less";
+        }
+        else{
+            dots.style.display="inline";
+            invisibleText.style.display="none";
+            btnText.innerHTML="Read More";
+        }
+    }
+    function MoreLess2(){
+        var dots=document.getElementById("dots2");
+        var invisibleText=document.getElementById("invisible-text2");
+        var btnText=document.getElementById("btn2");
+        if(dots.style.display!="none"){
+            dots.style.display="none";
+            invisibleText.style.display="inline";
+            btnText.innerHTML="Read Less";
+        }
+        else{
+            dots.style.display="inline";
+            invisibleText.style.display="none";
+            btnText.innerHTML="Read More";
+        }
+    }
+</script>
+</body>
+</html>
